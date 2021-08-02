@@ -228,6 +228,53 @@ main h2 {
   background-color: #d3d3d3;
 }
 
+.about-header {
+  padding-top: 60px;
+}
+
+.about-header h1,
+.about-header h2,
+.about-header h3,
+.about-header p {
+  text-align: center;
+}
+
+.about-header div {
+  background-color: #fff;
+  border: 2px solid #d3d3d3;
+}
+
+#about {
+  background-color: #fff;
+  text-align: center;
+}
+
+.logo-frame {
+  background-color: #fff;
+  width: 90%;
+  height: 100px;
+  border: 2px solid #d3d3d3;
+  margin: 0 5%;
+}
+
+#gallery {
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery-frame {
+  width: 90%;
+  height: 100px;
+  border: 2px solid #d3d3d3;
+  margin: 2.5% 5%;
+}
+
+#partner {
+  background-color: #272a31;
+  text-align: center;
+  color: #fff;
+}
+
 @media only screen and (min-width: 600px) {
   .speaker-info h3 {
     font-size: 16px;
