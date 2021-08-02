@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+
+}
+
+.burger-container {
+  position: relative;
+  transition: 0.2s;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.burger-container:hover {
+  color: #ec5342;
+}
+
+.back-img {
+  width: 100%;
+  margin: 0;
+}
+
+.img-curtain {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #f5f5f5c0;
+  height: 20vw;
+}
+
+header {
+  margin: 0 5%;
+}
+
+header h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: #ec5342;
+}
+
+header h2 {
+  font-family: "COCOGOOSE", sans-serif;
+  line-height: 100%;
+  font-size: 32px;
+  color: red;
+}
+
+.txt-container {
+  border: 2px solid #fff;
+}
+
+.txt-container p {
+  margin: 0 5%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./media/hitmar-resized.png);
+  background-color: #272a31;
+  color: #fff;
+  text-align: center;
+}
+
+main h2 {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+}
+
+.h-underline {
+  width: 10%;
+  border-color: #ec5342;
+  margin-bottom: 20px;
+}
+
+.main-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f520;
+  height: 80px;
+  margin: 5px 5%;
+}
+
+.main-card h3 {
+  color: #ec5342;
+  font-size: 16px;
+  width: 15%;
+  margin-right: 5%;
+}
+
+.m-card-icon {
+  color: #d3d3d3;
+  font-size: 35px;
+  width: 15%;
+  margin: 0 5% 0 2,5%;
+  transition: 0.2s;
+}
+
+.m-card-icon:hover {
+  color: #ec5342;
+}
+
+.m-card-text {
+  text-align: left;
+  font-size: 12px;
+  width: 50%;
+  margin: 0 5%;
+}
+
+.main-btn {
+  align-self: center;
+  background-color: #ec5342;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  border: none;
+  max-width: 400px;
+  width: 75%;
+  height: 80px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background-color: #e21919;
+}
+
+#speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+#speakers h2 {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0;
+}
+
+.speaker-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 5% 2.5%;
+}
+
+.speaker-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 55px;
+  max-width: 150px;
+  width: 15%;
+  z-index: 2;
+}
+
+.speaker-img {
+  position: relative;
+  margin-top: 4%;
+  margin-left: 4%;
+  min-width: 115px;
+  max-width: 300px;
+  width: 30%;
+  height: 30%;
+  z-index: 3;
+}
+
+.speaker-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+  
+  height: 34%;
+  margin: 0 5%;
+}
+
+.speaker-info h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.speaker-info h4 {
+  font-size: 12px;
+  color: #ec5342;
+  margin: 2.5% 0;
+}
+
+.speaker-info hr {
+  text-align: left;
+  width: 10%;
+  margin-left: 0;
+}
+
+.speaker-info p {
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.speaker-btn {
+  max-width: 400px;
+  width: 90%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  margin: 40px 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.speaker-btn i {
+  color: #ec5342;
+}
+
+.speaker-btn:hover {
+  background-color: #d3d3d3;
+}
+
+@media only screen and (min-width: 600px) {
+  .speaker-info h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  
+  .speaker-info h4 {
+    font-size: 14px;
+    color: #ec5342;
+    margin: 3.5% 0;
+  }
+  
+  .speaker-info p {
+    font-size: 12px;
+    margin-top: 3.5%;
+    margin-bottom: 0;
+  }
+}
