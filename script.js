@@ -86,7 +86,6 @@ btn.onclick = function () { toggleSpeakers() };
 
 function toggleSpeakers() {
   let btnValue = document.getElementById('morles').innerHTML;
-  console.log(btnValue);
   if (btnValue === "MORE ") {
     document.getElementById('morles').innerHTML = "LESS ";
     document.getElementById('chevron').classList.replace('fa-chevron-down', 'fa-chevron-up');
