@@ -12,19 +12,28 @@
   <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="pre-nav">
+    <a href=""> <i class="fab fa-twitter"></i></a>
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <ul class="pre-menu">
+      <li><a href="#">English</a></li>
+      <li><a href="#">My Page</a></li>
+      <li><a href="#">Input</a></li>
+    </ul>
+  </div>
   <nav id="nav" class="invisible">
     <div id="cross" class="cross-container" onclick="toggleMenu()">
       <i class="fas fa-times"></i>
     </div>
-    <a href="./about.html" class="nav-logo-frame">
+    <a href="./index.html" class="nav-logo-frame">
       <img src="./media/olc-logo.png" alt="" class="nav-logo">
     </a>
     <ul class="menu">
       <li><a href="./about.html">About</a></li>
-      <li><a href="#">Program</a></li>
-      <li><a href="#">Join</a></li>
-      <li><a href="#">Sponsor</a></li>
-      <li><a href="#">News</a></li>
+      <li><a href="#" onclick="toggleMenu()">Program</a></li>
+      <li><a href="#" onclick="toggleMenu()">Join</a></li>
+      <li><a href="#" onclick="toggleMenu()">Sponsor</a></li>
+      <li><a href="#" onclick="toggleMenu()">News</a></li>
     </ul>
     <button class="nav-btn">Join Now!</button>
     <div class="deco-ball-1"></div>
@@ -112,30 +121,32 @@
   <section id="speakers">
     <h2>Featured speakers</h2>
     <hr class="h-underline">
-    <div class="speaker-card">
-      <img src="./media/11-chess-board-removebg-preview.png" alt="" class="speaker-deco">
-      <img src="./media/preview-headshot.jpg" alt="Headshot picture" class="speaker-img">
-      <div class="speaker-info">
-        <h3>Youchai Benkler</h3>
-        <h4>Berkman Professor of Entrepeneurial Legal Studies at Harvard Law School</h4>
-        <hr>
-        <p>
-          Benkler studies commons-based peer production, and published his
-          seminal book. The Wealth of Networks in 2006.
-        </p>
+    <div class="speaker-container">
+      <div class="speaker-card">
+        <img src="./media/11-chess-board-removebg-preview.png" alt="" class="speaker-deco">
+        <img src="./media/preview-headshot.jpg" alt="Headshot picture" class="speaker-img">
+        <div class="speaker-info">
+          <h3>Youchai Benkler</h3>
+          <h4>Berkman Professor of Entrepeneurial Legal Studies at Harvard Law School</h4>
+          <hr>
+          <p>
+            Benkler studies commons-based peer production, and published his
+            seminal book. The Wealth of Networks in 2006.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="speaker-card">
-      <img src="./media/11-chess-board-removebg-preview.png" alt="" class="speaker-deco">
-      <img src="./media/preview-headshot.jpg" alt="Headshot picture" class="speaker-img">
-      <div class="speaker-info">
-        <h3>Youchai Benkler</h3>
-        <h4>Berkman Professor of Entrepeneurial Legal Studies at Harvard Law School</h4>
-        <hr>
-        <p>
-          Benkler studies commons-based peer production, and published his
-          seminal book. The Wealth of Networks in 2006.
-        </p>
+      <div class="speaker-card">
+        <img src="./media/11-chess-board-removebg-preview.png" alt="" class="speaker-deco">
+        <img src="./media/preview-headshot.jpg" alt="Headshot picture" class="speaker-img">
+        <div class="speaker-info">
+          <h3>Youchai Benkler</h3>
+          <h4>Berkman Professor of Entrepeneurial Legal Studies at Harvard Law School</h4>
+          <hr>
+          <p>
+            Benkler studies commons-based peer production, and published his
+            seminal book. The Wealth of Networks in 2006.
+          </p>
+        </div>
       </div>
     </div>
     <button class="speaker-btn">MORE <i class="fas fa-chevron-down"></i></button>

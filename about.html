@@ -12,6 +12,15 @@
   <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="pre-nav">
+    <a href=""> <i class="fab fa-twitter"></i></a>
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <ul class="pre-menu">
+      <li><a href="#">English</a></li>
+      <li><a href="#">My Page</a></li>
+      <li><a href="#">Input</a></li>
+    </ul>
+  </div>
   <div id="burger-container" class="burger-container">
     <i class="fas fa-bars"></i>
   </div>
@@ -19,15 +28,15 @@
     <div id="cross" class="cross-container" onclick="toggleMenu()">
       <i class="fas fa-times"></i>
     </div>
-    <a href="./about.html" class="nav-logo-frame">
+    <a href="./index.html" class="nav-logo-frame">
       <img src="./media/olc-logo.png" alt="" class="nav-logo">
     </a>
     <ul class="menu">
-      <li><a href="./about.html">About</a></li>
-      <li><a href="#">Program</a></li>
-      <li><a href="#">Join</a></li>
-      <li><a href="#">Sponsor</a></li>
-      <li><a href="#">News</a></li>
+      <li><a href="./about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="#" onclick="toggleMenu()">Program</a></li>
+      <li><a href="#" onclick="toggleMenu()">Join</a></li>
+      <li><a href="#" onclick="toggleMenu()">Sponsor</a></li>
+      <li><a href="#" onclick="toggleMenu()">News</a></li>
     </ul>
     <button class="nav-btn">Join Now!</button>
     <div class="deco-ball-1"></div>
