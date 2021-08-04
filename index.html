@@ -5,28 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capstone Project 1</title>
+  <title>OLC Re-opening | Home</title>
   <link rel="stylesheet" href="style.css">
   <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
   <link href="http://fonts.cdnfonts.com/css/lato" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
-    <div class="burger-container">
-      <i class="fas fa-bars"></i>
+  <nav id="nav" class="invisible">
+    <div id="cross" class="cross-container" onclick="toggleMenu()">
+      <i class="fas fa-times"></i>
     </div>
+    <a href="./about.html" class="nav-logo-frame">
+      <img src="./media/olc-logo.png" alt="" class="nav-logo">
+    </a>
+    <ul class="menu">
+      <li><a href="./about.html">About</a></li>
+      <li><a href="#">Program</a></li>
+      <li><a href="#">Join</a></li>
+      <li><a href="#">Sponsor</a></li>
+      <li><a href="#">News</a></li>
+    </ul>
+    <button class="nav-btn">Join Now!</button>
+    <div class="deco-ball-1"></div>
+    <img src="./media/11-chess-board-gray.png" alt="" class="curtain-deco">
   </nav>
   <div class="img-frame">
+    <div id="burger-container" class="burger-container">
+      <i class="fas fa-bars"></i>
+    </div>
     <img src="./media/vista_aerea_obelisco.jpg" alt="View of Barquisimeto's Obelisk" class="back-img">
+    <div class="img-curtain">
+      <img src="./media/11-chess-board-gray.png" alt="" class="curtain-deco">
+      <img src="./media/hitmark-gray.png" alt="" class="curtain-hitmark">
+    </div>
   </div>
-  <div class="img-curtain"></div>
   <header>
     <h1>Hello Barquisimeto!</h1>
-    <h2>OBELISK<br>LANGUAGE CENTER<br>RE-OPENNING 2021</h2>
+    <h2>OBELISK<br>LANGUAGE CENTER<br>RE-OPENING 2021</h2>
+    <div class="deco-ball-1"></div>
     <div class="txt-container">
       <p>
-        After a long time being closed we are finalLy re-openning. Tell all
+        After a long time being closed we are finally re-opening. Tell all
         your friends and come join us at our re-openning event, where we will
         be running a bundle of fun, productive and interesting activities.
         Your favourite language school is back!
@@ -37,52 +57,57 @@
       <p>
         @ C.C Leonardo DaVinci. 20 Av. / 9th and 10th.
       </p>
+      <img src="./media/hitmark-gray.png" alt="" class="tag-hitmark">
+      <i class="fas fa-globe-americas"></i>
     </div>
   </header>
   <main>
     <h2>Main Program</h2>
     <hr class="h-underline">
-    <div class="main-card">
-      <i class="fas fa-book-reader m-card-icon"></i>
-      <h3 class="m-card-title">Lecture</h3>
-      <p class="m-card-text">
-        Listen to the speakers form varius countries about the messages of
-        sharing and openning.
-      </p>
-    </div>
-    <div class="main-card">
-      <i class="fas fa-chalkboard-teacher m-card-icon"></i>
-      <h3 class="m-card-title">CC Exhibition</h3>
-      <p class="m-card-text">
-        Listen to the speakers form varius countries about the messages of
-        sharing and openning.
-      </p>
-    </div>
-    <div class="main-card">
-      <i class="fas fa-comments m-card-icon"></i>
-      <h3 class="m-card-title">Forum</h3>
-      <p class="m-card-text">
-        Listen to the speakers from various countries about the messages of
-        sharing and openning.
-      </p>
-    </div>
-    <div class="main-card">
-      <i class="fas fa-cogs m-card-icon"></i>
-      <h3 class="m-card-title">Workshop</h3>
-      <p class="m-card-text">
-        Listen to the speakers form varius countries about the messages of
-        sharing and openning.
-      </p>
-    </div>
-    <div class="main-card">
-      <i class="fas fa-network-wired m-card-icon"></i>
-      <h3 class="m-card-title">CC Ignite</h3>
-      <p class="m-card-text">
-        Listen to the speakers form varius countries about the messages of
-        sharing and openning.
-      </p>
+    <div class="program-container">
+      <div class="main-card">
+        <i class="fas fa-book-reader m-card-icon"></i>
+        <h3 class="m-card-title">Lecture</h3>
+        <p class="m-card-text">
+          Listen to the speakers form varius countries about the messages of
+          sharing and openning.
+        </p>
+      </div>
+      <div class="main-card">
+        <i class="fas fa-chalkboard-teacher m-card-icon"></i>
+        <h3 class="m-card-title">CC Exhibition</h3>
+        <p class="m-card-text">
+          Listen to the speakers form varius countries about the messages of
+          sharing and openning.
+        </p>
+      </div>
+      <div class="main-card">
+        <i class="fas fa-comments m-card-icon"></i>
+        <h3 class="m-card-title">Forum</h3>
+        <p class="m-card-text">
+          Listen to the speakers from various countries about the messages of
+          sharing and openning.
+        </p>
+      </div>
+      <div class="main-card">
+        <i class="fas fa-cogs m-card-icon"></i>
+        <h3 class="m-card-title">Workshop</h3>
+        <p class="m-card-text">
+          Listen to the speakers form varius countries about the messages of
+          sharing and openning.
+        </p>
+      </div>
+      <div class="main-card">
+        <i class="fas fa-network-wired m-card-icon"></i>
+        <h3 class="m-card-title">CC Ignite</h3>
+        <p class="m-card-text">
+          Listen to the speakers form varius countries about the messages of
+          sharing and openning.
+        </p>
+      </div>
     </div>
     <button class="main-btn">Join CC Global Summit 2015</button>
+    <a href="#" class="main-a">SEE THE WHOLE PROGRAM</a>
   </main>
   <section id="speakers">
     <h2>Featured speakers</h2>
@@ -115,5 +140,25 @@
     </div>
     <button class="speaker-btn">MORE <i class="fas fa-chevron-down"></i></button>
   </section>
+</section>
+<section id="partner">
+  <h2>Partner</h2>
+  <hr class="h-underline">
+  <ul class="partner-list">
+    <li><a href="#">mozilla</a></li>
+    <li><a href="#">Google</a></li>
+    <li><a href="#">NAVER</a></li>
+    <li><a href="#">daumkakao</a></li>
+    <li><a href="#">airbnb</a></li>
+  </ul>
+</section>
+<footer>
+  <img src="./media/olc-logo.png" alt="Image coming soon" class="footer-logo">
+  <p>
+    2021 | Obelisk Language Center<br>
+    Venezuela
+  </p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
