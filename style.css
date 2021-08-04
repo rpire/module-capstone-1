@@ -347,6 +347,7 @@ main h2 {
   position: relative;
   display: flex;
   flex-direction: row;
+  font-family: "Lato", sans-serif;
   margin: 5% 2.5%;
 }
 
@@ -610,6 +611,11 @@ main h2 {
   text-decoration: none;
 }
 
+.partner-logo {
+  width: 100px;
+  height: 100px;
+}
+
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -807,6 +813,10 @@ footer {
     margin: 0 2.5%;
   }
 
+  main {
+    padding-bottom: 10px;
+  }
+
   main h2 {
     padding-top: 80px;
   }
@@ -843,12 +853,49 @@ footer {
     margin: 0 5%;
   }
 
-  .main-btn {
+  .main-btn,
+  .speaker-btn {
     display: none
   }
 
   .main-a {
     display: block;
+    width: 27.5%;
+    padding: 0;
+    margin: 80px auto;
+  }
+
+  #speakers h2 {
+    margin-top: 75px;
+  }
+
+  .speaker-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    column-gap: 20px;
+    width: 90%;
+    padding: 100px 0;
+    margin: auto;
+  }
+
+  .speaker-card {
+    margin: 0;
+  }
+
+  .speaker-card h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .speaker-card h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .speaker-card p {
+    font-size: 16px;
+    margin: 0;
   }
 
   .about-header {
