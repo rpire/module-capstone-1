@@ -1,65 +1,49 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Obelisk Language Center Re-opening Event
 
-> One paragraph statement about the project.
+> This is the capstone project from the first module of Microverse Program.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./desktop_screenshot.png)
+![screenshot](./mobile_screenshot.png)
 
-Additional description about the project and its features.
+This is a website buit for the re-opening event of Obelisk Language Center. Obelisk Language Center is a language school located in Barquisimeto, Venezuela, more precisely at the 20th Av / 9th and 10th on the second floor of the DaVinci's Commercial Center. This school is currently closed because of the pandemics and it really doesn't have a re-opening date, but lets hope things get better soon and Obelisk can restart operations!
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML & CSS
+- JavaScript
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rpire.github.io/module-capstone-1/index.html)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
+### Get the repository into your PC.
+- Clone this repository using this URL [https://github.com/rpire/module-capstone-1.git](https://github.com/rpire/module-capstone-1.git) or download it as a ZIP from the "Code" tab and extract the files.
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
+- To use it open the "index.html" file in your local copy of the repository after cloning or downloading.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Rubén D. Pire L.**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@rpire](https://github.com/rpire)
+- Twitter: [@RubenPire7](https://twitter.com/RubenPire7)
+- LinkedIn: [Rubén Darío Pire López](https://www.linkedin.com/in/rub%C3%A9n-dar%C3%ADo-pire-l%C3%B3pez-507111189/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/rpire/module-capstone-1/issues).
 
 ## Show your support
 
@@ -67,9 +51,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- To [Cindy Shin](https://www.behance.net/adagio07), since the whole website is based on her template.
 
 ## 📝 License
 
