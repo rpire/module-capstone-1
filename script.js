@@ -80,6 +80,13 @@ function htmlGen(num) {
   }
 }
 
+function spkBtnValid() {
+  if (document.querySelector('#morles').innerHTML === 'MORE ') {
+    return false;
+  }
+  return true;
+}
+
 function widthTeller() {
   if (spkBtnValid() || window.innerWidth > 768) {
     document.getElementById('speaker-container').innerHTML = '';
@@ -106,12 +113,5 @@ function toggleSpeakers() {
 const btn = document.querySelector('.speaker-btn');
 window.addEventListener('resize', widthTeller);
 btn.onclick = function () { toggleSpeakers(); };
-
-function spkBtnValid() {
-  if (document.querySelector('#morles').innerHTML === 'MORE ') {
-    return false;
-  }
-  return true;
-}
 
 widthTeller();
