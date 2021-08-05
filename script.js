@@ -1,9 +1,9 @@
-document.getElementById('burger-container').onclick = function () { toggleMenu() };
-
 function toggleMenu() {
   document.querySelector('#burger-container').classList.toggle('invisible');
   document.querySelector('#nav').classList.toggle('invisible');
 }
+
+document.getElementById('burger-container').onclick = function () { toggleMenu(); };
 
 const speakers = [
   {
@@ -61,11 +61,11 @@ function htmlGen(num) {
 
     document.getElementById('speaker-container').innerHTML += spkCard;
 
-    let deco = document.querySelectorAll('.speaker-deco');
-    let img = document.querySelectorAll('.speaker-img');
-    let name = document.querySelectorAll('.speaker-name');
-    let occ = document.querySelectorAll('.speaker-occ');
-    let info = document.querySelectorAll('.speaker-para');
+    const deco = document.querySelectorAll('.speaker-deco');
+    const img = document.querySelectorAll('.speaker-img');
+    const name = document.querySelectorAll('.speaker-name');
+    const occ = document.querySelectorAll('.speaker-occ');
+    const info = document.querySelectorAll('.speaker-para');
 
     if (window.innerWidth > 768) {
       deco[i].setAttribute('src', `${speakers[i].imagesURL[1]}`);
@@ -80,40 +80,38 @@ function htmlGen(num) {
   }
 }
 
-let btn = document.querySelector('.speaker-btn');
-window.addEventListener('resize', widthTeller);
-btn.onclick = function () { toggleSpeakers() };
+function widthTeller() {
+  if (spkBtnValid() || window.innerWidth > 768) {
+    document.getElementById('speaker-container').innerHTML = '';
+    htmlGen(6);
+  } else {
+    document.getElementById('speaker-container').innerHTML = '';
+    htmlGen(2);
+  }
+  return window.innerWidth;
+}
 
 function toggleSpeakers() {
-  let btnValue = document.getElementById('morles').innerHTML;
-  if (btnValue === "MORE ") {
-    document.getElementById('morles').innerHTML = "LESS ";
+  const btnValue = document.getElementById('morles').innerHTML;
+  if (btnValue === 'MORE ') {
+    document.getElementById('morles').innerHTML = 'LESS ';
     document.getElementById('chevron').classList.replace('fa-chevron-down', 'fa-chevron-up');
     return widthTeller();
-  } else if (btnValue === "LESS ") {
-    document.getElementById('morles').innerHTML = "MORE "
-    document.getElementById('chevron').classList.replace('fa-chevron-up', 'fa-chevron-down');
-    return widthTeller();
   }
+  document.getElementById('morles').innerHTML = 'MORE ';
+  document.getElementById('chevron').classList.replace('fa-chevron-up', 'fa-chevron-down');
+  return widthTeller();
 }
+
+const btn = document.querySelector('.speaker-btn');
+window.addEventListener('resize', widthTeller);
+btn.onclick = function () { toggleSpeakers(); };
 
 function spkBtnValid() {
   if (document.querySelector('#morles').innerHTML === 'MORE ') {
     return false;
-  } else {
-    return true;
   }
-}
-
-function widthTeller() {
-  if (spkBtnValid() || window.innerWidth > 768) {
-    document.getElementById('speaker-container').innerHTML = "";
-    htmlGen(6);
-  } else {
-    document.getElementById('speaker-container').innerHTML = "";
-    htmlGen(2);
-  }
-  return window.innerWidth;
+  return true;
 }
 
 widthTeller();
