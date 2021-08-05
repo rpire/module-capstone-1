@@ -16,7 +16,7 @@ This is a website buit for the re-opening event of Obelisk Language Center. Obel
 
 ## Live Demo
 
-[Live Demo Link](https://rpire.github.io/module-capstone-1/index.html)
+[Live Demo Link](https://rpire.github.io/module-capstone-1)
 
 ## Loom Video
 
